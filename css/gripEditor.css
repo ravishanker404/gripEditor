@@ -1,0 +1,42 @@
+/*
+ *
+ */
+
+.gripEditor-divBtns{
+    float:left;
+    background-color:#c4c4c4;
+    height:30px;
+    padding-top:7px;
+    padding-top:2px;
+}
+.gripEditor-btns{
+    float:left;
+    margin-right:5px;
+    width:25px;
+    height:25px;
+    text-align:center;
+    vertical-align:middle;
+    font-weight:bold;
+    padding-top:5px;
+}
+.gripEditor-btns:hover{
+    background-color:#0099FF;
+}
+
+.gripEditor-divgripper{
+    float:left;
+    background-color:#eee;
+    height:6px;
+    border:0px solid #ddd;
+    background-image:url(../images/gripEditor-gripper.png);
+    overflow:hidden;
+    cursor:n-resize;
+}
+.gripEditor-gripperHidden{
+    float:left;
+    background-color:#eee;
+    height:12px;
+    border:0px solid #ddd;
+    background:#fff;
+    overflow:hidden;
+}
