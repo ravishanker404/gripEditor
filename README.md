@@ -10,3 +10,8 @@ Implementation
 ==============
 
 `$("#yourTextArea").gripEditor();`
+
+TODO
+====
+
+Add more feautures like text size, color, etc which are required in a basic text editor.
