@@ -20,7 +20,7 @@
             }, options);
         
             return this.each(function(){
-                var Resize = false;
+               var Resize = false;
                 var currentPosY;
                 var txtArea = $(this);
                 txtArea.hide(); 
@@ -35,7 +35,7 @@
                 //buttons div
                 var divBtns = $('<div/>',{
                     "class" : "gripEditor-divBtns",
-                    css : {width : userProps.width},
+                    css : {width : userProps.width}
                 }).appendTo(divContainer);
                 
                 //creating buttons
@@ -79,11 +79,11 @@
                 
                 $('<div/>',{
                     "class" : "gripEditor-gripperHidden",
-                    css : {width : userProps.width},
+                    css : {width : userProps.width}
                 }).appendTo(divContainer);
                 var gripper = $('<div/>',{
                     "class" : "gripEditor-divgripper",
-                    css : {width : userProps.width},
+                    css : {width : userProps.width}
                 }).appendTo(divContainer);
                 
                 /* ELEMENTS  ENDS*/
@@ -124,6 +124,7 @@
                 //gripper ends
                  
                 function updateTxtArea(){
+                
                     var txt = $('#myFrame').contents().find('body').html();
                     txtArea.val("<div>"+$('#myFrame').contents().find('body').html()+"</div>");
                 }
