@@ -16,7 +16,8 @@
             var userProps = $.extend({
                 width : "500px",
                 height : "250px",
-                fonts : ["Arial","Comic Sans MS","Courier New","Tahoma","Times"]
+                fonts : ["Arial","Comic Sans MS","Courier New","Tahoma","Times"],
+                fontsize : [1, 3, 5, 7, 8, 9, 10]
             }, options);
         
             return this.each(function(){
@@ -68,6 +69,16 @@
                 fontDropdown.append($("<option></option>")                 
                  .text(value)); 
                 });
+                var fontSizeDropdown = $('<select/>',{
+                     data:{commandName : "fontSize"},
+                     change : execCommand
+                }).appendTo(divBtns);
+                $.each(userProps.fontsize, function(key,value) {
+                fontSizeDropdown.append($("<option></option>")                 
+                 .text(value)); 
+                });
+                
+                
                 
                 //create the IFrame
                 var editorFrame = $("<iframe/>",{
